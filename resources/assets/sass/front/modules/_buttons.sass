@@ -1,0 +1,62 @@
+.Button
+  display: inline-block
+  text-decoration: none
+  padding: 10px 15px
+  background-color: $body-bg
+  border: 1px solid $button-color
+  font-size: 1.4rem
+  font-family: $nav-font
+  &_small
+    border-width: 1px
+    padding: 2px 3px
+    font-size: 1.2rem
+    font-weight: 300
+    margin: 0
+  &_default
+    color: $button-color
+    &:hover, &:focus, &.active
+        color: $vue-green
+        background-color: $button-color
+        outline: none
+    &.active
+      background-color: $body-bg
+      color: $vue-green
+  &_inactive:hover
+    color: $button-color
+    background-color: $body-bg
+  &_red
+    color: $laravel
+    &:hover, &:focus, &.active
+      color: $body-bg
+      background-color: $laravel
+  &:disabled, &:disabled:focus
+    border-color: grey
+    color: grey
+    cursor: not-allowed
+    &:hover
+      background-color: $body-bg
+  &_pulse
+    animation: pulse .1s ease infinite
+    background-color: $button-color!important
+    border-color: $button-color!important
+    color: #FFFFFF!important
+
+.Toggle__Button
+  text-align: center
+  margin: 2rem 0
+  min-height: 45px
+  .Button
+    min-width: 300px
+    &:focus
+      outline: none
+      border: 2px solid $button-color
+      color: $button-color
+      background-color: $body-bg
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.02)
+  100%
+    transform: scale(1)

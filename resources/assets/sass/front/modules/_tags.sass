@@ -1,0 +1,24 @@
+.Tags
+  &__List
+    list-style: none
+    margin: 0
+    overflow: hidden
+    padding: 0
+  .Tag
+    float: left
+    &::after
+      content: "\00a0"
+    span, a
+      @include tag($tag-default)
+      cursor: pointer
+    span.No-link
+      cursor: default
+      &:hover::after
+        background: $body-bg
+    &.active
+      span
+        background: $vue-green
+        &::before
+          border-right-color: $vue-green
+        // &:hover::after
+        //   background: $vue-green

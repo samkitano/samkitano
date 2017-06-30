@@ -1,0 +1,22 @@
+.Hero
+  width: 100%
+  padding: 0
+  margin: 0
+  &__Box
+    padding: 0
+    &__Logo
+      background: #eee url('../../assets/img/hero-bg-small.jpg') no-repeat center
+      background-size: cover
+    &__Logo_full
+      background: #eee url('../../assets/img/hero-bg.jpg') no-repeat center
+      transition: background-image 0.2s ease-in-out
+    &__Logo, &__Logo_full
+      display: flex
+      align-items: stretch
+      justify-content: space-around
+      background-size: cover
+      &__Svg
+        max-height: 300px
+        text-align: center
+        svg
+          width: 300px

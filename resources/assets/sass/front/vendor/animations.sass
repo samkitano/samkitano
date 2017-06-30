@@ -1,0 +1,62 @@
+// Fade
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+// Slide
+@keyframes slideIn
+  from
+    transform: translate3d(-100%, 0, 0)
+    visibility: visible
+  to
+    transform: translate3d(0, 0, 0)
+
+@keyframes slideOut
+  from
+    transform: translate3d(0, 0, 0)
+  to
+    visibility: hidden
+    transform: translate3d(-100%, 0, 0)
+
+.fade-enter-active,
+.fadeIn,
+.fade-leave-active,
+.fadeOut
+  animation-duration: .3s
+  -webkit-animation-duration: .3s
+  animation-fill-mode: both
+  -webkit-animation-fill-mode: both
+.fade-enter-active,
+.fadeIn
+  animation-name: fadeIn
+  -webkit-animation-name: fadeIn
+
+.fade-leave-active,
+.fadeOut
+  animation-name: fadeOut
+  -webkit-animation-name: fadeOut
+
+.slide-leave-active,
+.slideOut,
+.slide-enter-active,
+.slideIn
+  animation-duration: .2s
+  -webkit-animation-duration: .2s
+
+.slide-enter-active,
+.slideIn
+  -webkit-animation-name: slideIn
+  animation-name: slideIn
+
+.slide-leave-active,
+.slideOut
+  -webkit-animation-name: slideOut
+  animation-name: slideOut

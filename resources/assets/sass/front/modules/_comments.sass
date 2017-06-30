@@ -1,0 +1,29 @@
+.Comments
+  .Comment
+    border-left: 3px solid $vue-blue
+    margin-bottom: 2rem
+    &__Error
+      color: $laravel
+    &__Head
+      display: flex
+      &_left
+        float: left
+      &_right
+        float: right
+        padding-left: 5px
+    &__Head, &__Body, &__Footer
+      margin-left: 1rem
+    &__Body
+      @extend .clear
+    &__Footer
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+    &__Likes
+    &__Tools
+      .Svg
+        margin-left: 1rem
+    &__Owned
+      border-left: 3px solid $vue-green
+    .Editor
+        margin-left: 1rem

@@ -1,0 +1,3 @@
+*.sqlite
+/dev-seeds
+dev-seeds/*

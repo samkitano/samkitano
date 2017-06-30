@@ -1,0 +1,32 @@
+.Users
+  .User
+    display: flex
+    flex-wrap: wrap
+    &__Name, &__Email, &__Bio, &__Pw, &__Avatar, &__Comments, &__Registered
+      width: 100%
+      border-bottom: 1px solid $maincolor
+      margin-bottom: 1rem
+      display: flex
+      align-items: center
+      flex-grow: 1
+    &__Key, &__Val, &__Error
+      padding: .6rem 0
+      float: left
+      overflow: hidden
+      list-style: none
+      > h1, > h2, > h3, > h4, > h5, > h6
+        margin: 0
+    &__Key
+      width: 20%
+      min-width: 80px
+      font-weight: bold
+    &__Val
+      width: 55%
+      padding-left: .5rem
+    &__Error
+      width: 25%
+      color: $laravel
+      font-size: 1.2rem
+    &__Comments, &__Registered
+      .User__Val
+        width: 80%

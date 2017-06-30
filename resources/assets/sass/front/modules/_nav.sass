@@ -1,0 +1,39 @@
+.App-nav
+  margin-top: 1rem
+  position: relative
+  a
+    font-size: 1.4rem
+    font-family: $nav-font
+    &:focus
+      outline-color: $vue-blue
+  &__Wrapper
+    display: block
+    &__Left
+      float: left
+      &__button
+        @extend .Button, .Button_default
+        margin-left: 1rem
+    &__Right
+      float: right
+      &__button
+        @extend .Button, .Button_default
+        margin-right: 1rem
+        margin-left: 1rem
+
+@media (max-width: 657px)
+  .App-nav__Wrapper__Left
+    float: none!important
+    text-align: center
+    display: grid
+  .App-nav__Wrapper__Right
+    float: none!important
+    text-align: center
+    display: grid
+  .App-nav__Wrapper__Right_auth
+    display: grid
+  .App-nav__Wrapper__Left__button
+    margin: 0 1px
+  .App-nav__Wrapper__Right__button
+    margin: 0 1px
+  .Authentication
+    top: 23rem

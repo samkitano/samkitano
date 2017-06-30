@@ -1,0 +1,20 @@
+.Editor
+  margin-bottom: 2rem
+  &__Body, &__Preview, &__Markdown
+    width: 100%
+    min-height: 20vh
+    margin-bottom: 5px
+  &__Preview
+    @extend .Field
+  &__Toggle, &__Submit
+    @extend .Button, .Button_default
+    &:focus
+      outline-color: $vue-blue
+  &__Toggle
+    margin-left: 1rem
+  &__Submit
+  &__Markdown
+    @extend .Field
+  &__Footer
+    &_right
+      float: right

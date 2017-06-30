@@ -1,0 +1,23 @@
+{
+  "/js/vendor.js": "/js/vendor.js",
+  "/js/admin-bootstrap.js": "/js/admin-bootstrap.js",
+  "/js/admin.js": "/js/admin.js",
+  "/js/articles.js": "/js/articles.js",
+  "/js/user.js": "/js/user.js",
+  "/js/front-nav.js": "/js/front-nav.js",
+  "/js/comments.js": "/js/comments.js",
+  "/js/app.js": "/js/app.js",
+  "/js/contact.js": "/js/contact.js",
+  "/mix.js": "/mix.js",
+  "/css/admin.css": "/css/admin.css",
+  "/css/markitup-iframe.css": "/css/markitup-iframe.css",
+  "/css/app.css": "/css/app.css",
+  "/js/manifest.js": "/js/manifest.js",
+  "/js/base.js": "/js/base.js",
+  "/js/dt.js": "/js/dt.js",
+  "/js/likes.js": "/js/likes.js",
+  "/js/privacy.js": "/js/privacy.js",
+  "/js/accept-cookies.js": "/js/accept-cookies.js",
+  "/js/toolbar.js": "/js/toolbar.js",
+  "/js/dashboard.js": "/js/dashboard.js"
+}

@@ -1,0 +1,52 @@
+.Footer
+  h3
+    font-weight: normal
+    color: #000
+    text-decoration: underline
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: $footer-font
+  color: $svg-default
+  margin: 1rem 0
+  height: 2rem
+  width: 100%
+  position: relative
+  clear: both
+  .Svg__Icon
+    &:hover
+      fill: $twitter-blue
+  &__.Copy-symbol
+    font-family: $body-font
+  &__Privacy-policy
+    opacity: 0
+    height: 0
+    overflow: hidden
+    &__Heading
+      text-align: center
+      color: #333
+    &__Body
+      .dark
+        color: #333
+    &__Footer
+      text-align: center
+      margin: 1rem 0
+    &_open
+      opacity: 1
+      max-height: 400px
+      overflow-y: auto
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.80)
+      -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.80)
+      -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.80)
+  &__Privacy-policy, &__Privacy-policy_open
+    position: absolute
+    bottom: 4rem
+    width: 80%
+    margin: 0 auto
+    background-color: #eee
+    padding: 1rem
+    display: block
+    -moz-transition: opacity 0.3s ease-in-out
+    -o-transition: opacity 0.3s ease-in-out
+    -webkit-transition: opacity 0.3s ease-in-out
+    transition: opacity 0.3s ease-in-out

@@ -1,0 +1,88 @@
+@mixin form-control-focus($color: $maincolor)
+  $color-rgba: rgba(red($color), green($color), blue($color), .6)
+  &:focus
+    border-color: $color
+    outline: 0
+    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px $color-rgba)
+
+@mixin box-shadow($shadow...)
+  -webkit-box-shadow: $shadow
+  box-shadow: $shadow
+
+@mixin box-sizing($boxmodel)
+  -webkit-box-sizing: $boxmodel
+  -moz-box-sizing: $boxmodel
+  box-sizing: $boxmodel
+
+@mixin transition($transition...)
+  -webkit-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+
+@mixin transition-property($transition-property...)
+  -webkit-transition-property: $transition-property
+  transition-property: $transition-property
+
+@mixin transition-delay($transition-delay)
+  -webkit-transition-delay: $transition-delay
+  transition-delay: $transition-delay
+
+@mixin transition-duration($transition-duration...)
+  -webkit-transition-duration: $transition-duration
+  transition-duration: $transition-duration
+
+@mixin transition-timing-function($timing-function)
+  -webkit-transition-timing-function: $timing-function
+  transition-timing-function: $timing-function
+
+@mixin transition-transform($transition...)
+  -webkit-transition: -webkit-transform $transition
+  -moz-transition: -moz-transform $transition
+  -o-transition: -o-transform $transition
+  transition: transform $transition
+
+@mixin placeholder($color: #999)
+  &::-moz-placeholder
+    color: $color
+    opacity: 1
+  &:-ms-input-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color
+
+@mixin tag($tagcolor)
+  color: $body-bg
+  display: block
+  padding: 3px 7px 4px 11px
+  background: $tagcolor
+  text-decoration: none
+  font-family: $tag-font, sans-serif
+  float: left
+  border-radius: 0 2px 2px 0
+  position: relative
+  margin: 5px 0 5px 10px
+  font-size: .8em
+  transition: top 0.1s linear
+  -webkit-transition: top 0.1s linear
+  -moz-transition: top 0.1s linear
+  &:before
+    content: ''
+    width: 0
+    height: 0
+    border-top: 9px solid transparent
+    border-bottom: 10px solid transparent
+    border-right: 10px solid $tagcolor
+    position: absolute
+    left: -10px
+    top: 0
+  &:after
+    content: ''
+    width: 6px
+    height: 6px
+    border-radius: 50%
+    background: $body-bg
+    position: absolute
+    top: 7px
+    left: 0px
+  &:hover::after
+    background: #35495E

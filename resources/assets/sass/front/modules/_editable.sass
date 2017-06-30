@@ -1,0 +1,16 @@
+[contenteditable]
+  cursor: pointer
+  max-width: 90%
+  word-break: break-word
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s)
+  @include form-control-focus
+  @include placeholder
+
+[contentEditable=true]:empty:before
+  content: attr(data-ph)
+  color: #aaaaaa
+
+.Editable
+  &_clickable
+    svg
+      cursor: pointer

@@ -1,0 +1,47 @@
+*
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+
+html, body
+  height: 100%
+
+body
+  font-size: 1.4rem
+  background-color: $body-bg
+  color: $text-color
+
+.Default
+  min-height: calc(100% - 4rem) // footer height
+  position: relative
+  overflow: hidden
+
+.App-container
+  width: 80%
+  margin: 4rem auto 1rem auto
+  font-family: "Open Sans"
+  padding-bottom: 2rem
+  max-width: 960px
+  text-align: justify
+  &_blur
+    opacity: .6
+    filter: blur(2px)
+  li
+    list-style-type: square
+    font-family: Inconsolata, monospace
+    font-size: 1.6rem
+  img
+    max-width: 100%
+    margin: 1rem 0
+
+.No-auth
+  display: flex
+  height: 50vh
+  justify-content: center
+  align-items: center
+  color: $laravel
+
+.Pg-header
+  a
+    vertical-align: middle

@@ -1,0 +1,75 @@
+.Article
+  &__Dates
+    color: $svg-default
+    font-size: 1.2rem
+    margin: 2rem 0
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    &__Icon
+      margin-right: 1rem
+    &__Time
+      display: block
+      &__Created, &__Updated
+        text-align: left
+
+  &__Heading
+    &_link
+      margin-bottom: 1rem
+      a
+        font-size: 1.8rem
+        color: $vue-blue
+        &:hover
+          color: $vue-green
+    &_link, &:hover, &:focus
+      a
+        text-decoration: none
+    &_text
+      font-size: 1.6rem
+      margin-bottom: 1rem
+  &__Content
+    &_partial
+      font-family: $teaser-font
+      em
+        background-color: $hilite
+        text-decoration: none
+        font-style: normal
+        font-weight: bold
+    &_full
+      margin: 1rem 0
+  &__Footer
+    font-family: $footer-font
+    &_top, &_bottom
+      display: flex
+    &_bottom
+    &_top
+      margin-bottom: 1rem
+    &__Icon
+      &_dates
+        margin-left: 1rem
+        display: flex
+      &_likes
+        margin-right: 1rem
+      &_comments, &_dates, &_likes
+        color: $svg-default
+  &__Social
+    display: flex
+    justify-content: center
+    margin: 4rem 0
+    &_facebook, &_twitter, &_like
+      list-style: none
+      margin-left: 1rem
+      margin-right: 1rem
+.Article-view
+  .Pg-header
+    text-align: center
+  .Article__Heading_text.Pg-header
+    font-size: 1.6rem
+
+.Articles
+  &__List
+    margin-top: 2rem
+    &.Article
+      padding: 0 1rem
+      border-left: 3px solid $maincolor
+      margin-bottom: 2rem

@@ -1,0 +1,91 @@
+label
+  display: inline-block
+  max-width: 100%
+  margin-bottom: 5px
+  font-weight: bold
+
+.Field
+  display: block
+  width: 100%
+  height: 34px
+  padding: 6px 12px
+  font-size: 1.4rem
+  line-height: 1.428571429
+  color: #888888
+  background-color: #fff
+  background-image: none
+  border: 1px solid #ccc
+  @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075))
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s)
+  @include form-control-focus
+  @include placeholder
+  &::-ms-expand
+    border: 0
+    background-color: transparent
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] &
+    background-color: #EBEBEB
+    opacity: 1
+  &[disabled],
+  fieldset[disabled] &
+    cursor: not-allowed
+  &.error
+    border-color: $laravel
+    @include form-control-focus($laravel)
+
+.H-Form
+  background-color: $body-bg
+  border: 2px solid $maincolor
+  &__Body
+    padding: 1rem
+  &__Heading
+    font-size: 1.6rem
+    text-align: center
+    color: $body-bg
+    background: $maincolor
+    padding: 3px 5px 5px 5px
+  &__Footer
+    padding: 0 1rem
+  &__Item
+    margin: 1rem 0
+    &__error
+      min-height: 51px
+      background-color: #333
+      padding: 0 4px
+  &__Button, &__Button_group
+    text-align: right
+    &_group
+      button:first-child:not([type="submit"])
+        float: left
+      button:not(:first-child)
+        margin-left: 1rem
+
+.Form-error, .Form-info
+  font-family: Inconsolata, monospace
+  font-size: 1.2rem
+
+.Form-error
+  color: $laravel-light
+
+.Form-info
+  color: #5BC0DE
+
+.Change-email, .Change-pw
+  position: absolute
+  top: 30.1rem
+  right: 1rem
+  width: 300px
+
+.Change-email, .Change-pw, .H-Form
+  z-index: 100
+
+textarea.Field
+  height: 100%
+
+.No__s_p_a_m__please
+  display: none
+
+.Contact-Form, .Reset-Password
+  max-width: 600px
+  margin: 0 auto
