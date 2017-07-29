@@ -13,8 +13,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $article_id
  * @property-read \App\Article $article
  * @property-read \App\User $user
- * @method static \Illuminate\Database\Query\Builder|\App\ArticleLike whereArticleId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\ArticleLike whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\ArticleLike whereArticleId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\ArticleLike whereUserId($value)
  * @mixin \Eloquent
  */
 class ArticleLike extends Model

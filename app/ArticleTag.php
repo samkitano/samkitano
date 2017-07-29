@@ -13,8 +13,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $tag_id
  * @property-read \App\Article $article
  * @property-read \App\Tag $tag
- * @method static \Illuminate\Database\Query\Builder|\App\ArticleTag whereArticleId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\ArticleTag whereTagId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\ArticleTag whereArticleId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\ArticleTag whereTagId($value)
  * @mixin \Eloquent
  */
 class ArticleTag extends Model

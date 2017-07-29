@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $name
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Media[] $media
- * @method static \Illuminate\Database\Query\Builder|\App\Album whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Album whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Album whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Album whereName($value)
  * @mixin \Eloquent
  */
 class Album extends Model

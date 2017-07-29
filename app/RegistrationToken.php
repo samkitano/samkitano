@@ -14,14 +14,14 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property int $user_id
  * @property string $token
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \App\User $user
- * @method static \Illuminate\Database\Query\Builder|\App\RegistrationToken whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\RegistrationToken whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\RegistrationToken whereToken($value)
- * @method static \Illuminate\Database\Query\Builder|\App\RegistrationToken whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\RegistrationToken whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\RegistrationToken whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\RegistrationToken whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\RegistrationToken whereToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\RegistrationToken whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\RegistrationToken whereUserId($value)
  * @mixin \Eloquent
  */
 class RegistrationToken extends Model

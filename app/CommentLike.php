@@ -13,8 +13,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $comment_id
  * @property-read \App\Comment $comment
  * @property-read \App\User $user
- * @method static \Illuminate\Database\Query\Builder|\App\CommentLike whereCommentId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\CommentLike whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CommentLike whereCommentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\CommentLike whereUserId($value)
  * @mixin \Eloquent
  */
 class CommentLike extends Model

@@ -14,22 +14,22 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $slug
  * @property string $title
- * @property string $subtitle
+ * @property string|null $subtitle
  * @property string $body
- * @property bool $published
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
+ * @property int $published
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Comment[] $comments
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\ArticleLike[] $likes
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Tag[] $tags
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereBody($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article wherePublished($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereSlug($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereSubtitle($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Article whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article wherePublished($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereSubtitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Article whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Article extends Model

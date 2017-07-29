@@ -13,17 +13,17 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $user_id
  * @property int $article_id
  * @property string $body
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
  * @property-read \App\Article $article
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\CommentLike[] $likes
  * @property-read \App\User $user
- * @method static \Illuminate\Database\Query\Builder|\App\Comment whereArticleId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Comment whereBody($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Comment whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Comment whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Comment whereUpdatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Comment whereUserId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereArticleId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Comment whereUserId($value)
  * @mixin \Eloquent
  */
 class Comment extends Model

@@ -12,15 +12,15 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $title
  * @property string $description
  * @property string $body
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereBody($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereCreatedAt($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereDescription($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereSlug($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereTitle($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Statics whereUpdatedAt($value)
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereBody($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereDescription($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereSlug($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereTitle($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Statics whereUpdatedAt($value)
  * @mixin \Eloquent
  */
 class Statics extends Model

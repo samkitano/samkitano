@@ -12,8 +12,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property string $name
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Article[] $articles
- * @method static \Illuminate\Database\Query\Builder|\App\Tag whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\App\Tag whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Tag whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Tag whereName($value)
  * @mixin \Eloquent
  */
 class Tag extends Model
