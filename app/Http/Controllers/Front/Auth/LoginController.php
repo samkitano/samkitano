@@ -38,7 +38,14 @@ class LoginController extends Controller
         }
 
         if ($this->attemptLogin($request)) {
-            return response()->json(['user' => Auth::user()]);
+            $user = Auth::user();
+
+            if ($user->active) {
+                return response()->json(['user' => $user]);
+            }
+
+            $this->guard()->logout();
+            $request->session()->invalidate();
         }
 
         $this->incrementLoginAttempts($request);
