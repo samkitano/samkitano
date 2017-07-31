@@ -41,7 +41,7 @@ class CommentsController extends ApiController
         $comments = $this->getAllEloquent($article);
 
         if (! $comments) {
-            $this->respondNotFound(ApiController::COMMENTS_NOT_FOUND);
+            return $this->respondOk(['comments' => []]);
         }
 
         $transformedComments = $this->getAllTransformed($article, $comments);
