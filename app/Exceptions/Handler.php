@@ -159,7 +159,7 @@ class Handler extends ExceptionHandler
 
         if ($area === 'admin') {
             $status['message'] = 'Session expired. Please try again.';
-            return back()->with('status', $status);
+            return back()->with('status', $status)->withInput();
         }
 
         return response()->view("{$area}.errors", ['status' => $status], 500);

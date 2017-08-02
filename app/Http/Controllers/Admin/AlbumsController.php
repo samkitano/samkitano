@@ -120,7 +120,7 @@ class AlbumsController extends AdminController
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int                     $id
+     * @param  int  $id
      *
      * @return \Illuminate\Http\Response
      */
